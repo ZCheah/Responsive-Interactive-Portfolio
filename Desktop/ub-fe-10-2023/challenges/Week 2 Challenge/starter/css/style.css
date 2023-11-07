@@ -102,27 +102,66 @@ nav ul li a:hover{
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.surfReport { 
+.flex-item {
+  border: 5px solid var(--secondary);
+  background-color: var(--primary);
+  color: var(--tertiary);
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50% - 1em);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  text-decoration: none;
+  background-blend-mode: soft-light;
+  background-size: 150%;
+  transition: all 0.5s;
+  font-size: 0.9rem;
+}
+/* feature first portfolio item */
+.flex-item:first-child {
+  min-height: 400px;
   flex-basis: 100%;
-  padding: 10px;
+}
+.flex-item:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.flex-item div {
+  background-color: var(--secondary);
+  padding: 8px 10px;
+}
+
+.flex-item h3 {
+  font-size: 1.6rem;
+}
+.surfReport { 
+  /* flex-basis: 100%;
+  padding: 10px; */
+  background-image: url("../images/02-portfolio-4.jpg");
 }
 
 .ledWall { 
-  flex-basis: 50%;
-  padding: 10px;
+  /* flex-basis: 50%;
+  padding: 10px; */
+  background-image: url("../images/02-portfolio-1.jpg");
 }
 .calculator {
-  flex-basis: 50%;
-  padding: 10px;
+  background-image: url("../images/02-portfolio-2.jpg");
+  /* flex-basis: 50%;
+  padding: 10px; */
 }
 .pastelPuzzels {
-  flex-basis: 50%;
-  padding: 10px;
+  /* flex-basis: 50%;
+  padding: 10px; */
+  background-image: url("../images/02-portfolio-3.jpg");
 }
 .runBuddy {
-  flex-basis: 50%;
-  padding: 10px;
+  /* flex-basis: 50%;
+  padding: 10px; */
+  background-image: url("../images/02-run-buddy.jpg");
+
 }
 
 .image {
